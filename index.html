@@ -10,8 +10,13 @@
 
 <body>
     <p> You can run this bookmarklet by bookmarking this link: <a class="bookmarklet"
-            href="javascript:(function()%7Bfunction%20callback()%7Bvar%20script%20%3D%20document.createElement('script')%3Bscript.type%20%3D%20'text%2Fjavascript'%3Bscript.src%20%3D%20'https%3A%2F%2Fswas02.github.io%2FSlideShare-Downloader%2Fscript.js'%3Bdocument.head.appendChild(script)%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22http%3A%2F%2F127.0.0.1%3A5500%2Fscript.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()">⏬SlideShare_Download</a>
+            href="javascript:(function()%7Bdocument.createElement('script')%3B%20script.src%20%3D%20'https%3A%2F%2Fswas02.github.io%2FSlideShare-Downloader%2Fscript.js'%3B%20document.getElementsByTagName('head')%5B0%5D.appendChild(script)%7D)()">⏬SlideShare_Download</a>
     </p>
+    <script>
+        document.createElement('script');
+        script.src = 'https://swas02.github.io/SlideShare-Downloader/script.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
 </body>
 
 </html>
